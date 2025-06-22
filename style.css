@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    font-family: "Segoe UI", sans-serif;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background-color: #121212;
+    color: #eee;
+  }
+  
+  body.dark .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+  }
+  
+  body.dark .brand span,
+  body.dark .delivery,
+  body.dark .rating span {
+    color: #ccc;
+  }
+  
+  body.dark .cart-btn {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  body.dark .cart-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Dark Mode Toggle */
+  .theme-toggle {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #111;
+  }
+  
+  body.dark .theme-toggle {
+    color: #ccc;
+  }
+  
+  /* Card Grid */
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Card */
+  .card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Image Zoom */
+  .image-container {
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Card Content */
+  .card-body {
+    padding: 16px;
+  }
+  
+  .title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 8px;
+  }
+  
+  .brand {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .brand span {
+    color: #007185;
+  }
+  
+  .rating {
+    font-size: 14px;
+    color: #ffa41c;
+    margin-bottom: 10px;
+  }
+  
+  .rating span {
+    color: #111;
+    margin-left: 5px;
+  }
+  
+  .price {
+    margin-bottom: 8px;
+  }
+  
+  .current {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b12704;
+  }
+  
+  .original {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #888;
+  }
+  
+  .discount {
+    color: #b12704;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  
+  .delivery {
+    font-size: 14px;
+    color: #007600;
+    margin-bottom: 12px;
+  }
+  
+  /* Cart Button */
+  .cart-btn {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    color: #111;
+    padding: 10px 14px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s;
+  }
+  
+  .cart-btn:hover {
+    background-color: #f7ca00;
+  }
+  
+  .cart-btn:active {
+    transform: scale(0.97);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
+  

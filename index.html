@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Product Card - Enhanced</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="toggle-dark" />
+      Dark Mode
+    </label>
+  </div>
+
+  <!-- Product Card Grid -->
+  <div class="card-grid">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="image-container">
+        <img src="https://m.media-amazon.com/images/I/71KGRaA5VSL._AC_UY327_FMwebp_QL65_.jpg" alt="Smart Watch">
+      </div>
+      <div class="card-body">
+        <h3 class="title">Fire-Boltt Ninja Call Pro Plus Smart Watch</h3>
+        <p class="brand">by <span>Fire-Boltt</span></p>
+        <div class="rating">⭐ ⭐ ⭐ ⭐ ☆ <span>(10,423)</span></div>
+        <div class="price">
+          <span class="current">₹1,199</span>
+          <span class="original">₹9,999</span>
+          <span class="discount">88% off</span>
+        </div>
+        <p class="delivery">Free Delivery by Tomorrow</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 2 (Duplicate with different image) -->
+    <div class="card">
+      <div class="image-container">
+        <img src="https://m.media-amazon.com/images/I/61y2VVWcGBL._AC_UL480_FMwebp_QL65_.jpg" alt="Smart Watch">
+      </div>
+      <div class="card-body">
+        <h3 class="title">Noise ColorFit Pulse Grand Smart Watch</h3>
+        <p class="brand">by <span>Noise</span></p>
+        <div class="rating">⭐ ⭐ ⭐ ⭐ ☆ <span>(22,021)</span></div>
+        <div class="price">
+          <span class="current">₹1,499</span>
+          <span class="original">₹3,999</span>
+          <span class="discount">63% off</span>
+        </div>
+        <p class="delivery">Free Delivery by Sunday</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 3 (Duplicate with different image) -->
+    <div class="card">
+      <div class="image-container">
+        <img src="https://m.media-amazon.com/images/I/71W3a0f3xCL._AC_UL480_FMwebp_QL65_.jpg" alt="Smart Watch">
+      </div>
+      <div class="card-body">
+        <h3 class="title">boAt Wave Call Smart Watch with Bluetooth</h3>
+        <p class="brand">by <span>boAt</span></p>
+        <div class="rating">⭐ ⭐ ⭐ ⭐ ☆ <span>(15,800)</span></div>
+        <div class="price">
+          <span class="current">₹1,799</span>
+          <span class="original">₹6,999</span>
+          <span class="discount">74% off</span>
+        </div>
+        <p class="delivery">Free Delivery by Tomorrow</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    document.getElementById("toggle-dark").addEventListener("change", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>
+
